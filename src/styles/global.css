@@ -82,7 +82,7 @@
             margin-right: 15vw;
 
             input {
-                padding: 0.25rem 0.25rem;
+                padding: 0.5rem 0.25rem;
                 border: 1px solid var(--inputs);
                 border-radius: 0.15rem;
 
@@ -156,5 +156,67 @@
 }
 
 @media only screen and (min-width: 992px) {
+    .main__container {
+        display: flex;
 
+        .header {
+            flex: 1;
+            height: 155vh;
+            align-items: flex-start;
+
+            .logo__wrapper {
+                margin-top: 10.5rem;
+                height: 18vh;
+                
+                .odin__logo {
+                    height: 6rem;
+                }
+            }
+        }
+
+        .form__wrapper {
+            flex: 2;
+
+            .row__one,
+            .row__two,
+            .row__three {
+                gap: 3rem;
+            }
+
+            .top__section {
+                padding: 20vh 4vw 8vh;
+
+                width: 70%;
+            }
+
+            .form__section {
+                padding: 4vh 4vw 6vh;
+            }
+        }
+    }
+
+    .form__button--wrapper {
+        padding: 4vh 4vw 40vh;
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+
+        width: 30vw;
+        bottom: 0.5rem;
+
+        p, a {
+            color: white;
+            font-size: 0.75rem;
+            font-family: 'Inter', system-ui, sans-serif;
+            font-weight: 400;
+        }
+
+        a {
+            text-decoration: underline;
+        }
+    }
 }
