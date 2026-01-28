@@ -21,42 +21,60 @@
             </div>
         </header>
 
-        <p class="main__title">
-            This is not a real online service!
-            You know you need something like this in your life to help you realize your deepest dreams.
-            Sign up <em>now</em> to get started.
-            You <em>know</em> you want to.
-        </p>
+       <div class="form__wrapper">
 
-        <p class="sub__title">Let's do this!</p>
+            <section class="top__section">
+                <p class="main__text">
+                    This is not a real online service!
+                    You know you need something like this in your life to help you realize your deepest dreams.
+                    Sign up <em>now</em> to get started.
+                </p>
+                <p class="sub__text">You <em>know</em> you want to.</p>
+            </section>
 
-        <form action="" method="post" class="form__container">
-            <div class="first__name">
-                <label for="first-name">FIRST NAME</label>
-                <input type="text" name="first-name" id="first-name" placeholder="First name" required>
-            </div>
-            <div class="last__name">
-                <label for="last-name">LAST NAME</label>
-                <input type="text" name="last-name" id="last-name" placeholder="Last name" required>
-            </div>
-            <div class="email">
-                <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email" placeholder="Email" required>
-            </div>
-            <div class="phone">
-                <label for="phone">PHONE NUMBER</label>
-                <input type="tel" name="phone" id="phone" placeholder="Phone number" required>
-            </div>
-            <div class="password">
-                <label for="password">PASSWORD</label>
-                <input type="password" name="password" id="password" placeholder="Password" required>
-            </div>
-            <div class="confirm__password">
-                <label for="confirm-password">CONFIRM PASSWORD</label>
-                <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm password" required>
-            </div>
-            <button type="submit" class="create__account">CREATE ACCOUNT</button>
-        </form>
+            <section class="form__section">
+                <form action="" method="post" class="form__container">
+                    <p class="form__text">Let's do this!</p>
+
+                    <div class="row__one">
+                        <div class="first__name">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" name="first-name" id="first-name" placeholder="First name" required>
+                        </div>
+                        
+                        <div class="last__name">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" name="last-name" id="last-name" placeholder="Last name" required>
+                        </div>
+                    </div>
+
+                    <div class="row__two">
+                        <div class="email">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="phone__number">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" name="phone" id="phone" placeholder="Phone number" required>
+                        </div>
+                    </div>
+
+                    <div class="row__three">
+                        <div class="password">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password" placeholder="Password" required>
+                        </div>
+
+                        <div class="confirm__password">
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm password" required>
+                        </div>
+                    </div>
+
+                </section>
+                    <button type="submit" class="create__account">CREATE ACCOUNT</button>
+                </form>
+        </div>
 
     </main>
 
