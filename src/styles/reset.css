@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Norse-Bold;
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url('../assets/fonts/Norse-Bold.otf') format('opentype');
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    min-height: 100svh;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/global.css">
+    <title>Odin Project | Signup Form</title>
+</head>
+<body>
+
+    <main class="main__container">
+
+        <header class="header">
+            <div class="logo__wrapper">
+                <img 
+                src="./src/assets/images/odin-lined.png" 
+                alt="odin logo" 
+                class="odin__logo">
+                <p class="logo__text">ODIN</p>
+            </div>
+        </header>
+
+        <p class="main__title">
+            This is not a real online service!
+            You know you need something like this in your life to help you realize your deepest dreams.
+            Sign up <em>now</em> to get started.
+            You <em>know</em> you want to.
+        </p>
+
+        <p class="sub__title">Let's do this!</p>
+
+        <form action="" method="post" class="form__container">
+            <div class="first__name">
+                <label for="first-name">FIRST NAME</label>
+                <input type="text" name="first-name" id="first-name" placeholder="First name" required>
+            </div>
+            <div class="last__name">
+                <label for="last-name">LAST NAME</label>
+                <input type="text" name="last-name" id="last-name" placeholder="Last name" required>
+            </div>
+            <div class="email">
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="phone">
+                <label for="phone">PHONE NUMBER</label>
+                <input type="tel" name="phone" id="phone" placeholder="Phone number" required>
+            </div>
+            <div class="password">
+                <label for="password">PASSWORD</label>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+            </div>
+            <div class="confirm__password">
+                <label for="confirm-password">CONFIRM PASSWORD</label>
+                <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm password" required>
+            </div>
+            <button type="submit" class="create__account">CREATE ACCOUNT</button>
+        </form>
+
+    </main>
+
+</body>
+</html>
