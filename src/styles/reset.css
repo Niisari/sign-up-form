@@ -7,7 +7,7 @@
 }
 
 @font-face {
-    font-family: Norse-Bold;
+    font-family: Norse;
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -15,11 +15,27 @@
 }
 
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Inter', system-ui, sans-serif;
     min-height: 100svh;
 }
 
 img {
     display: block;
     max-width: 100%;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-weight: 600;
 }
