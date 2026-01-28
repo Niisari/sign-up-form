@@ -2,13 +2,19 @@
     --create-account-btn: #596D48;
     --inputs: #E5E7EB;
     --transparent-bg: rgba(0, 0, 0, 0.5);
+    --labels: #1f2937;
+}
+
+.main__container {
+    min-height: 100svh;
+    overflow-x: hidden;
 }
 
 .header {
     background: url('../assets/images/bg-image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 30svh;
+    height: 40vh;
 
     display: flex;
     justify-content: center;
@@ -31,8 +37,121 @@
 
         .logo__text {
             color: white;
-            font-family: 'Norse-Bold';
+            font-family: 'Norse', serif;
             font-size: 3rem;
+        }
+    }
+}
+
+.form__wrapper {
+    
+    #signup-form {
+        
+    }
+
+    .top__section {
+        display: flex;
+        flex-direction: column;
+        padding: 12vh 2vw 6vh;
+        
+        .sub__text {
+            margin-top: 1.5rem;
+        }
+    }
+
+    .form__section {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+        padding: 4vh 2vw 4vh;
+
+        .form__text {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: var(--labels);
+        } 
+
+        .row__one,
+        .row__two {
+            margin-bottom: 1rem;
+        }
+
+        .row__one,
+        .row__two,
+        .row__three {
+            display: flex;
+            flex: 1;
+            gap: 0.85rem;
+            font-size: 0.75rem;
+
+            input {
+                padding: 0.25rem 0.25rem;
+                border: 1px solid var(--inputs);
+                border-radius: 0.15rem;
+            }
+
+            label {
+                font-weight: 600;
+                letter-spacing: 1px;
+                color: var(--labels);
+            }
+        }
+
+        .row__one > div,
+        .row__two > div,
+        .row__three > div {
+            flex: 1;
+        }
+    }
+}
+
+.form__button--wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 4vh 2vw 8vh;
+    gap: 1.5rem;
+
+    .create__account {
+        padding: 0.75rem 2rem;
+        background: var(--create-account-btn);
+        color: white;
+        border-radius: 0.5rem;
+    }
+
+    .login__text {
+        font-weight: 400;
+    }
+
+    .login__text a {
+        color: var(--create-account-btn);
+        font-weight: 600;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 369px) {
+    .form__wrapper {
+        .form__section {
+            display: flex;
+            align-items: center;
+
+            .row__one,
+            .row__two,
+            .row__three {
+                display: flex;
+                flex-direction: column;
+
+                .first__name,
+                .last__name,
+                .email,
+                .phone__number,
+                .password,
+                .confirm__password {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
         }
     }
 }
