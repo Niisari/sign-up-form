@@ -161,7 +161,7 @@
 
         .header {
             flex: 1;
-            height: 155vh;
+            height: 120vh;
             align-items: flex-start;
 
             .logo__wrapper {
@@ -196,7 +196,7 @@
     }
 
     .form__button--wrapper {
-        padding: 4vh 4vw 40vh;
+        padding: 4vh 4vw;
     }
 
     .footer {
