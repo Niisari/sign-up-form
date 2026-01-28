@@ -33,7 +33,7 @@
             </section>
 
             <section class="form__section">
-                <form action="" method="post" class="form__container">
+                <form action="" method="post" id="signup-form">
                     <p class="form__text">Let's do this!</p>
 
                     <div class="row__one">
@@ -70,10 +70,14 @@
                             <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm password" required>
                         </div>
                     </div>
-
-                </section>
-                    <button type="submit" class="create__account">CREATE ACCOUNT</button>
                 </form>
+            </section>
+
+            <div class="form__button--wrapper">
+                <button 
+                form="signup-form" type="submit" class="create__account">Create Account</button>
+                <p class="login__text">Already have an account? <a href="#">Log in</a></p>
+            </div>
         </div>
 
     </main>
