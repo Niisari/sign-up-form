@@ -196,10 +196,14 @@
 
             .logo__wrapper {
                 margin-top: 10.5rem;
-                height: 18vh;
+                height: 17vh;
                 
                 .odin__logo {
                     height: 6rem;
+                }
+
+                .logo__text {
+                    font-size: 4rem;
                 }
             }
         }
